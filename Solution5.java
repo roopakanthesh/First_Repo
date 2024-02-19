@@ -1,9 +1,9 @@
 package demo.paractise.strings;
-//WAJP TO DISPLAY THE SECOND HALF OF THE STRINGS
-public class Solution4 {
+//WAJP TO DISPLAY THE FIRST HALF OF THE STRINGS IN REVERSE ORDER
+public class Solution5 {
 	 public static void main(String[] args) {
 			String s = "programming";
-			for(int i=(s.length()/2)+1;i<=s.length()-1;i++) {
+			for(int i=s.length()/2;i>=0;i--) {
 				System.out.print(s.charAt(i)+" ");
 			}
 		}

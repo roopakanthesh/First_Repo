@@ -1,14 +1,11 @@
-package demo.kodnest.practisepatterns;
-
+package demo.paractise.strings;
+//WAJP TO DISPLAY ALL THE CHARACTERS SEPARATED BY SPACE
 public class Solution1 {
 	public static void main(String[] args) {
-		for(int i=1;i<=4;i++) {
-			for(int j=1;j>=3;j--) {
-				System.out.print("*");
-			}
-			for(int k=1;k<=i;k++) {
-				System.out.print(" ");
-			}
-		}System.out.println();
+        String s = "programming";
+        for(int i=0;i<s.length();i++) {
+        	System.out.print(s.charAt(i)+" ");
+        }
 	}
+
 }
