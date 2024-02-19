@@ -1,24 +1,18 @@
-package com.kodnest.threrads;
+package demo.mainmethod.com;
 
 public class Main {
 	public static void main(String[] args) {
-		//Thread currentThread = Thread.currentThread();
-	    //System.out.println(currentThread);
-		Printalpabets a = new Printalpabets();
+		System.out.println("Hello");
+		main();
 		
-		
-		Printnumbers b = new Printnumbers();
-
-		
-		Thread thread1 = new Thread(a);
-		Thread thread2 = new Thread(b);
-		
-		thread1.start();
-		thread2.start();
+	}
+	public static void main() {
+		System.out.println("4");
+		main(3);
+		System.out.println("1");
+	}
+	public static void main(int a) {
+		System.out.println("2");
 	}
 
-	
 }
-
-
-
