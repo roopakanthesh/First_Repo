@@ -1,19 +1,17 @@
-package demo.kodnest.pattern;
+package demo.practise1.com;
+import java.util.Scanner;
 
 public class q2 {
 	public static void main(String[] args) {
-		int n=3;
-		int baseNum=10;
-		for(int i=1;i<=n;i++) {
-			int num = baseNum;
-			for(int j=1;j<=i;j++) {
-				System.out.print(num);
-				if(j<i) {
-					System.out.print("*");
-				}
-			num+=10;
-			}
-			System.out.println();		
-		}
+		System.out.println("User! please enter a number");
+		Scanner scan = new Scanner(System.in);
+		int n = scan.nextInt();
+		sqrtnumber(n);
 	}
+	//finding the square and cube root of number
+	
+       static void sqrtnumber(int n) {
+    	   System.out.println("The square root="+Math.sqrt(n));
+    	   System.out.println("The cube root="+(int)Math.cbrt(n));
+       }
 }
