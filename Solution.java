@@ -1,28 +1,42 @@
-package com.kodnest.banking;
+package com.kodnest.Static;
 
-class A{
-	int age;
-}
-
-class B extends A{
-	public B() {
+class Citizen{
+	static {
+		System.out.println("block-1");
 	}
 	
-	public B(int i) {
-		//super class method is calling its parent (class A)
-		
+	 {
+		System.out.println("block-2");
 	}
-	String name;
 }
+	//static int Nationality;
+	//int age;
 
+
+    /* void display1() {
+    	 System.out.println("Instance method");
+     }
+    	 
+     
+     void display2() {
+    	 System.out.println("Static method");
+     }
+     }
+     
+     */
 
 public class Solution {
 	public static void main(String[] args) {
-		B b = new B();
-		B b1 = new B(10);
-		System.out.println(b.name);
-		System.out.println(b.age);
-		
+		System.out.println("main method");
+	 Citizen citizen = new Citizen();
 	}
-
 }
+
+	  // citizen.display1();
+		// citizen.display2();
+		
+		//System.out.println(c.age);
+		//System.out.println(c.Nationality);
+	
+	
+
