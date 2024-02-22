@@ -1,42 +1,20 @@
-package com.kodnest.Static;
-
-class Citizen{
-	static {
-		System.out.println("block-1");
-	}
-	
-	 {
-		System.out.println("block-2");
-	}
-}
-	//static int Nationality;
-	//int age;
-
-
-    /* void display1() {
-    	 System.out.println("Instance method");
-     }
-    	 
-     
-     void display2() {
-    	 System.out.println("Static method");
-     }
-     }
-     
-     */
+package com.kodnest.Demoexception;
 
 public class Solution {
 	public static void main(String[] args) {
-		System.out.println("main method");
-	 Citizen citizen = new Citizen();
-	}
-}
-
-	  // citizen.display1();
-		// citizen.display2();
+		try {
+			System.out.println("program started");
+			String s = "java";
+			System.out.println(s.charAt(-1));
+		}
 		
-		//System.out.println(c.age);
-		//System.out.println(c.Nationality);
-	
-	
+		catch(Exception e) {
+			System.out.println("User! Please enter within the boundary index element");
+		}
+				finally {
+			System.out.println("program ended");
+		}
+		
+}
+}
 
