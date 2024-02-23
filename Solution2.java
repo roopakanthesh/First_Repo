@@ -1,11 +1,15 @@
-package demo.paractise.strings;
-    ////WAJP TO DISPLAY ALL THE CHARACTERS SEPARATED IN REVERSE ORDER
+package com.kodnest.exception;
+
 public class Solution2 {
 	public static void main(String[] args) {
-        String s = "programming";
-        for(int i=s.length()-1;i>=0;i--) {
-        	System.out.print(s.charAt(i)+" ");
-        }
+		method1();
 	}
-
+	
+   static void method1() {
+	   method2();
+   }
+   
+   static void method2(){
+	   System.out.println(3/0);
+   }
 }
