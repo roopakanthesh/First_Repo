@@ -1,12 +1,20 @@
-package demo.paractise.strings;
-// WAJP TO CONVERT ARRAY INTO STRING
-public class Solution8 {
-	public static void main(String[] args) {
-		char[] ch = {'h','e','l','l','o'};
-		String s = new String(ch);
-		System.out.println(s);
-		String str = ch.toString();
-		System.out.println(str.charAt(0));
-	}
+package demo.kodnest.practisepatterns;
 
-}
+public class solution8{
+			public static void main(String[] args) {
+				for(int row=1;row<=10;row++) {
+					for(int col=1;col<=10;col++) {
+						if(row==1 || col==1 || row==10 || col==10 )
+						{
+							System.out.print("*");
+						}
+						else
+						{
+							System.out.print(" ");
+						}
+					}
+			System.out.println();
+				}
+			}
+		}
+

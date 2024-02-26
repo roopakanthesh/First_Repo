@@ -1,9 +1,19 @@
-package demo.paractise.strings;
-//WAJP CONVERT MUTABLE INTO IMMUTABLE STRING
-public class Solution9 {
+package demo.kodnest.practisepatterns;
+
+public class solution9 {
 	public static void main(String[] args) {
-		String s = "programming";
-		StringBuffer str = new StringBuffer(s);
-		System.out.println(str.reverse());
+		for(int row=1;row<=10;row++) {
+			for(int col=1;col<=10;col++) {
+				if(row==1 || col==1 || row==10 || row==5 )
+				{
+					System.out.print("*");
+				}
+				else
+				{
+					System.out.print(" ");
+				}
+			}
+	System.out.println();
+		}
 	}
 }

@@ -1,38 +1,17 @@
-package com.kodnest.exception;
+package demo.looping.com;
 
-import java.util.Scanner;
-
-public class Solution1 {
+public class solution1 {
 	public static void main(String[] args) {
-		shop();
-	}
-	
-	public static void shop() {
-		try {
-			pay();
-			System.out.println("Thank you for shopping");
+		for(int i=1;i<=5;i++) {
+			for(int j=1;j<=5;j++) 
+			{
+			System.out.print("*");
 		}
-		catch(Exception ex){
-			System.out.println("Shopping not completed,try again!");
-	
-		}
-	}
-	
-	public static void pay()
-	{
-		try {
-			Scanner scan = new Scanner(System.in);
-			System.out.println("Please enter amount: ");
-			int amt = scan.nextInt();
-			System.out.println("Payment successfl - INR "+amt);
-		    scan.close();
 			
-			
-		}
-		catch(Exception ex) {
-			System.out.println("Payment not completed!");
-			throw ex;
+			{
+			System.out.println();
 		}
 	}
-
+	}
 }
+

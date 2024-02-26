@@ -1,10 +1,17 @@
-package demo.paractise.strings;
-//WAJP TO DISPLAY THE FIRST HALF OF THE STRINGS
-public class Solution3 {
-         public static void main(String[] args) {
-			String s = "programming";
-			for(int i=0;i<=s.length()/2;i++) {
-				System.out.print(s.charAt(i)+" ");
-			}
+package demo.looping.com;
+
+public class solution3 {
+	public static void main(String[] args) {
+		for(int i=1;i<=5;i++) {
+			for(int j=1;j<=2;j++)
+		{
+			System.out.print("*");
 		}
+		{
+			System.out.println();
+		}
+	}
+
 }
+}
+

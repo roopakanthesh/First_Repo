@@ -1,21 +1,11 @@
-package com.kodnest.w3resource;
+package demo.kodnest.pattern;
 
-import java.util.Scanner;
-
-public class Q5 {
-	/*5. Write a Java program that takes two numbers as input and displays the product of two numbers.
-Test Data:
-Input first number: 25
-Input second number: 5
-Expected Output :
-25 x 5 = 125*/
+public class q5 {
 	public static void main(String[] args) {
-		Scanner scan = new Scanner(System.in);
-		System.out.println("input 1 number");
-		int a= scan.nextInt();
-		System.out.println("input 2 number");
-		int b=scan.nextInt();
-		System.out.println(a*b);
+		for(int i=1;i<=3;i++)  {
+			for(int j=4;j<=4;j++)
+				System.out.print("*");
+			}
+		System.out.println();
 	}
-
-}
+	}

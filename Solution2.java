@@ -1,15 +1,13 @@
-package com.kodnest.exception;
+package demo.kodnest.practisepatterns;
 
-public class Solution2 {
+public class solution2 {
 	public static void main(String[] args) {
-		method1();
+		for(int i=1;i<=6;i++) {
+			for(int j=1;j<=i;j++) {
+				System.out.print("*");
+			}
+		System.out.println();
+		}
 	}
-	
-   static void method1() {
-	   method2();
-   }
-   
-   static void method2(){
-	   System.out.println(3/0);
-   }
+
 }

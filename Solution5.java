@@ -1,11 +1,19 @@
-package demo.paractise.strings;
-//WAJP TO DISPLAY THE FIRST HALF OF THE STRINGS IN REVERSE ORDER
-public class Solution5 {
-	 public static void main(String[] args) {
-			String s = "programming";
-			for(int i=s.length()/2;i>=0;i--) {
-				System.out.print(s.charAt(i)+" ");
+package demo.kodnest.practisepatterns;
+
+public class solution5 {
+		public static void main(String[] args) {
+			for(int row=1;row<=10;row++) {
+				for(int col=1;col<=10;col++) {
+					if(row==1 || col==1 || col==10 || row==5 || row==10 )
+					{
+						System.out.print("*");
+					}
+					else
+					{
+						System.out.print(" ");
+					}
+				}
+		System.out.println();
 			}
 		}
-}
-
+	}

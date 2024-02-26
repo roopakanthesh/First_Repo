@@ -1,16 +1,20 @@
-package demo.paractise.strings;
- //WAJP TO FIND FREQUENCY OF THE ONE LETTER
-public class Solution16 {
-	public static void main(String[] args) {
-		int count = 0;
-		String s = "String";
-		char ch = 'r';
-		for(int i=0;i<s.length();i++) {
-			if(ch==s.charAt(i)) {
-				count++;
-			}
-		}
-		System.out.println("Frequency of"+" "+ch+" = is"+count);
-	}
+package demo.kodnest.practisepatterns;
 
+public class solution16 {
+	public static void main(String[] args) {
+		for(int row=1;row<=10;row++) {
+			for(int col=1;col<=10;col++) {
+				if(col==1 || col==5 || col==10 ||row==1 )
+				{
+					System.out.print("*");
+				}
+				else
+				{
+					System.out.print(" ");
+				}
+			}
+	System.out.println();
+		}
+	}
 }
+

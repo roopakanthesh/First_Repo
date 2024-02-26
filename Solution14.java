@@ -1,15 +1,20 @@
-package demo.paractise.strings;
+package demo.kodnest.practisepatterns;
 
-import java.util.Scanner;
-
-//WAJP TO READ AND WRITE THE SENTENCE
-public class Solution14 {
+public class solution14 {
 	public static void main(String[] args) {
-		Scanner scan = new Scanner(System.in);
-		
-		System.out.println("user please enter the sentence");
-		String s = scan.nextLine();
-		System.out.println(s);
+		for(int row=1;row<=10;row++) {
+			for(int col=1;col<=10;col++) {
+				if(row==1 || col==10 || row==10)
+				{
+					System.out.print("*");
+				}
+				else
+				{
+					System.out.print(" ");
+				}
+			}
+	System.out.println();
+		}
 	}
-
 }
+

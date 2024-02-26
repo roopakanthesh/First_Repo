@@ -1,10 +1,31 @@
-package com.kodnest.w3resource;
+package demo.practise1.com;
+import java.util.Scanner;
 
-public class Q1 {
+public class q1 {
 	public static void main(String[] args) {
-		/*1. Write a Java program to print 'Hello' on screen and your name on a separate line.
-          Expected Output : Hello*/
-		System.out.println("Hello");
+		Scanner scan = new Scanner(System.in);
+		System.out.println("enter a number");
+		int n=scan.nextInt();
+		armstrongnumber(n);
 	}
-
+	
+		static void armstrongnumber(int n) {
+			int count=0;
+			int on=0;
+			int sum=0;
+		while(n>0) 
+		{
+			n=n/10;
+			count++;
+		}
+		if(on==sum)
+		{
+			System.out.println("ArmStrong Number");
+		}
+		else
+		{
+	System.out.println("Not ArmStrong Number");
+	}
+      }
 }
+

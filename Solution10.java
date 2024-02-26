@@ -1,17 +1,20 @@
-package demo.paractise.strings;
-//WAJP TO FIND THE GIVEN STRING IS PALLINDROME
-public class Solution10 {
+package demo.kodnest.practisepatterns;
+
+public class solution10 {
 	public static void main(String[] args) {
-		String s = "roopa";
-		StringBuffer str = new StringBuffer(s);
-		 StringBuffer reverse = str.reverse();
-		String string = reverse.toString();
-		if(s.equals(reverse.toString())) {
-          System.out.println("pallindrome");
+		for(int row=1;row<=10;row++) {
+			for(int col=1;col<=10;col++) {
+				if(row==1 || col==1 || row==5 )
+				{
+					System.out.print("*");
+				}
+				else
+				{
+					System.out.print(" ");
+				}
+			}
+	System.out.println();
 		}
-		else
-		{
-			System.out.println("not pallindrome");
-		}
+	}
 }
-}
+	

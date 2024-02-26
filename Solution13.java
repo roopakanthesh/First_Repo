@@ -1,13 +1,21 @@
-package demo.paractise.strings;
-//WAJP TO DISPLAY ALL THE STRINGS IN REVERSE ORDER
-public class Solution13 {
-		public static void main(String[] args) {
-			String s = "hello java program";
-			String[] str = s.split(" ");
-			for(int i=str.length-1;i>=0;i--) {
-				StringBuffer string = new StringBuffer(str[i]);
-				System.out.print(string.reverse()+" ");
+package demo.kodnest.practisepatterns;
+
+public class solution13 {
+	public static void main(String[] args) {
+		for(int row=1;row<=10;row++) {
+			for(int col=1;col<=10;col++) {
+				if( row==1 || row==10  || col==5 )
+				{
+					System.out.print("*");
+				}
+				else
+				{
+					System.out.print(" ");
+				}
 			}
+	System.out.println();
 		}
+	}
 }
+
 

@@ -1,15 +1,21 @@
-package demo.paractise.strings;
-//WAJP TO CONVERT STRINGS TO ARRAYS		
+package demo.kodnest.practisepatterns;
 
-public class Solution7 {
-	   public static void main(String[] args) {
-		String s = "programming";
-		char[] ch = s.toCharArray();
-		for(int i=0;i<ch.length;i++) {
-			System.out.println(ch[i]);
+public class solution7 {
+			public static void main(String[] args) {
+				for(int row=1;row<=10;row++) {
+					for(int col=1;col<=10;col++) {
+						if(row==1 || col==1 || row==10 )
+						{
+							System.out.print("*");
+						}
+						else
+						{
+							System.out.print(" ");
+						}
+					}
+			System.out.println();
+				}
+			}
 		}
-		}
-	}
-		
 
 
