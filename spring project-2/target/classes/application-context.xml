@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+  https://www.springframework.org/schema/beans/spring-beans.xsd">
+	<!-- Constructor Injection -->
+	<bean id="l1" class="com.kodnest.bean.Laptop">
+		<constructor-arg name="name" value="HP"></constructor-arg>
+		<constructor-arg name="color" value="grey"></constructor-arg>
+	</bean>
+
+	<!-- Setter Injection -->
+	<bean id="l2" class="com.kodnest.bean.Laptop">
+		<property name="name" value="Lenovo"></property>
+		<property name="color" value="Silver"></property>
+	</bean>
+
+
+
+</beans>
