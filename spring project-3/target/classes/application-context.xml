@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+  https://www.springframework.org/schema/beans/spring-beans.xsd">
+	<bean id="E1" class="com.kodnest.bean.employee">
+		<property name="technologies">
+		<list>
+		<value>Java</value>
+		<value>Spring</value>
+		<value>MySQL</value>
+		<value>React</value>
+		<value>Docker</value>
+		</list>
+		</property>
+		<property name="projects">
+		<set>
+		<value>project-1</value>
+		<value>project-2</value>
+		<value>project-3</value>
+		</set>
+		</property>
+		<property name="organization">
+		<map>
+		<entry key="001" value="Deloitte"></entry>
+		<entry key="002" value="Google"></entry>
+		<entry key="003" value="Wipro"></entry>
+		<entry key="004" value="Infoys"></entry>
+		</map>
+		</property>
+	</bean>
+</beans>
