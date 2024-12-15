@@ -1,28 +1,20 @@
-package demo.practise1.com;
+package com.kodnest.w3resource;
 
 import java.util.Scanner;
 
-public class q3 {
+public class Q3 {
+	/*3. Write a Java program to divide two numbers and print them on the screen.
+Test Data :
+50/3
+Expected Output :
+16*/
 	public static void main(String[] args) {
 		Scanner scan = new Scanner(System.in);
-		int n = scan.nextInt();
-		System.out.println("User! please enter a number");
-		singleDigitSum(n);
+		System.out.println("enter number-1");
+		int a = scan.nextInt();
+		System.out.println("enter number-2");
+		int b = scan.nextInt();
+		System.out.println("The result is "+(a/b));
 	}
-      static void singleDigitSum(int n) {
-    	  int rem=0;
-		int sum=0;
-		while(n>9){
-		sum=0;
-		rem=0;
-		while(n>0) {
-			rem=n%10;
-			sum=sum+rem;
-			n=n/10;
-		}
-		System.out.println(sum+">>>>");
-			n=sum;
-		}
-		System.out.println("The sum is"+sum);
-	}
+
 }

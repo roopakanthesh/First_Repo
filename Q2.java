@@ -1,17 +1,18 @@
-package demo.practise1.com;
+package com.kodnest.w3resource;
+
 import java.util.Scanner;
 
-public class q2 {
+public class Q2 {
+	/*2. Write a Java program to print the sum of two numbers.
+Test Data: 74 + 36
+Expected Output :110*/
 	public static void main(String[] args) {
-		System.out.println("User! please enter a number");
 		Scanner scan = new Scanner(System.in);
-		int n = scan.nextInt();
-		sqrtnumber(n);
+		System.out.println("user enter number-1");
+		int a = scan.nextInt();
+		System.out.println("user enter number-2");
+		int b = scan.nextInt();
+		System.out.println("The sum of to number is "+(a+b));
 	}
-	//finding the square and cube root of number
-	
-       static void sqrtnumber(int n) {
-    	   System.out.println("The square root="+Math.sqrt(n));
-    	   System.out.println("The cube root="+(int)Math.cbrt(n));
-       }
+
 }
