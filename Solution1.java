@@ -1,17 +1,9 @@
-package demo.looping.com;
+package com.kodnest.accessmodifiers1;
 
-public class solution1 {
-	public static void main(String[] args) {
-		for(int i=1;i<=5;i++) {
-			for(int j=1;j<=5;j++) 
-			{
-			System.out.print("*");
-		}
-			
-			{
-			System.out.println();
-		}
+public class Solution1 {
+	public int a=10;
+	void display() {
+		System.out.println(a);
 	}
-	}
+
 }
-
