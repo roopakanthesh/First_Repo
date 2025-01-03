@@ -1,17 +1,10 @@
-package demo.looping.com;
+package com.kodnest.accessmodifiers2;
+import com.kodnest.accessmodifiers1.*;
 
-public class solution3 {
-	public static void main(String[] args) {
-		for(int i=1;i<=5;i++) {
-			for(int j=1;j<=2;j++)
-		{
-			System.out.print("*");
-		}
-		{
-			System.out.println();
-		}
-	}
 
+class Solution3 extends Solution1 {
+	
+    void display() {
+    	System.out.println(new Solution3().a);
+    }
 }
-}
-
