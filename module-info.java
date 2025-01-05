@@ -1,2 +1,2 @@
-module Jagged.Array.com {
+module Array2D {
 }
