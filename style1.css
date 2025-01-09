@@ -1,0 +1,12 @@
+img{
+    
+    border:50px solid black;
+    border-radius: 200px;
+    border-color: red;
+    opacity: 0.9;
+}
+img:hover{
+    opacity: 0.8;
+    border-radius: yellow;
+
+}
