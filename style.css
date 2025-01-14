@@ -1,20 +1,37 @@
-img{
-    width: 500px;
-    height: 300px;
-    border:50px solid blue;
-    border-radius: 200px;
-    opacity: 0.9;
+#d1{
+    color: blue;
 }
-img:hover{
-    opacity: 0.8;
-    width: 480px;
-   border-color: brown;
+.dc2{
+    color: rgba(0, 128, 0, 0.847);
 }
 
-div{
+#h{
+    color: purple;
+    background-color: yellow;
+    width: 100px;
+    height: 42px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sanserif;
+    font-size: 20px;
+}
+
+#c{
+    color: green;
+    background-color: lightblue;
+    width: 150px;
+    height: 40px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 25px;
+}
+
+#f{
+    color: magenta;
     background-color: aqua;
-    border-radius: 300px;
-    width: 300px;
-    height: 300px;
-    opacity: 0.7;
+    width: 250px;
+    height: 30px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 30px;
+}
+body{
+    background-image: url(img.jpg);
+    background-size: cover;
 }
