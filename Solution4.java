@@ -1,19 +1,9 @@
-package demo.kodnest.practisepatterns;
+package com.kodnest.accessmodifiers2;
 
-public class solution4 {
-	public static void main(String[] args) {
-		for(int row=1;row<=5;row++) {
-			for(int col=1;col<=5;col++) {
-				if(row==1 || row==5 || col==1 || col==5 )
-				{
-					System.out.print("*");
-				}
-				else
-				{
-					System.out.print(" ");
-				}
-			}
-	System.out.println();
-		}
+class Solution4 {
+	
+	void display() {
+		System.out.println(new Solution3().a);
 	}
+
 }
