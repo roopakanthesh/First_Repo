@@ -1,13 +1,28 @@
-package demo.kodnest.practisepatterns;
+package com.kodnest.banking;
 
-public class solution {
+class A{
+	int age;
+}
+
+class B extends A{
+	public B() {
+	}
+	
+	public B(int i) {
+		//super class method is calling its parent (class A)
+		
+	}
+	String name;
+}
+
+
+public class Solution {
 	public static void main(String[] args) {
-		for(int i=1;i<=3;i++) {
-			for(int j=1;j<=7;j++) {
-				System.out.print("*");
-			}
-			System.out.println();
-		}
+		B b = new B();
+		B b1 = new B(10);
+		System.out.println(b.name);
+		System.out.println(b.age);
+		
 	}
 
 }
